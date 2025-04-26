@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "start": "ts-node src/index.ts",
-    "test": "jest --coverage"
+    "test": "jest --coverage --runInBand --force-exit"
   },
   "keywords": [],
   "author": "",

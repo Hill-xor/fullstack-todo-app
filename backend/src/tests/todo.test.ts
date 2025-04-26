@@ -8,6 +8,7 @@ describe("Todo API", () => {
     try {
       await mongoose.connect(process.env.MONGO_URI!);
       console.log(`[TEST] MongoDB connected !!`);
+      done();
 
     } catch (error) {
       console.error(`[TEST] Failed to connect to MongoDB: ${error}`);
@@ -16,7 +17,8 @@ describe("Todo API", () => {
 
   afterAll(async () => {
     await mongoose.connection.close();
-     console.log(`[TEST] MongoDB connection closed.`);
+    console.log(`[TEST] MongoDB connection closed.`);
+    done();
   });
 
   afterEach(async () => {

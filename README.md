@@ -1,4 +1,3 @@
-
 # ProTasker
 
 A micro-service FullStack Todo app that uses the best practices of software development.
@@ -67,4 +66,3 @@ As this will be one of my current projects, I'm aiming at:
  - refactors
  - performance improvements
  - accessibility
-

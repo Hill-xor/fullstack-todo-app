@@ -15,6 +15,6 @@ export const postTodo = async (req: Request, res: Response): Promise<void> => {
   return;
 }
   
-  const todo = await todoService.createTodo(title);
+const todo = await todoService.createTodo(title);
   res.status(201).json({message: todo});
 }
